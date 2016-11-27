@@ -1,9 +1,9 @@
 $(function(){
 
-	$feed = "https://api.flickr.com/services/feeds/photos_public.gne?=jsoncallback=?";
+	var feed = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 
 
-	$.getJSON($feed, function(result){
+	$.getJSON(feed, function(result){
 		alert("test");
 	});
 });
