@@ -1,11 +1,10 @@
-// $(function(){
+$(function(){
 
-// 	var feed = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-// 	var options = {
-// 		"format" : "json"
-// 	};
+	$("form").submit(function(evt){
+		evt.preventDefault();
+		console.log("test");
+	})
 
-// 	$.getJSON(feed, options, function(result){
-// 		alert(result.items[0].link);
-// 	});
-// });
+	var tag = $("form").value;
+
+}); //end ready
