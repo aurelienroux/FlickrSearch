@@ -1,5 +1,7 @@
 *{
 	font-family: "Roboto", sans-serif;
+	box-sizing: border-box;
+	border: 1px solid tomato;
 }
 
 html{
@@ -10,10 +12,23 @@ html{
 	background-color: #ddd;
 	width: 90%;
 	margin: 0 auto;
+	padding: 35px;
 }
 
+h1{
+	text-align: center;
+	margin: 30px 0;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
 li{
-	width: 30%;
+	width: 33%;
 	display: inline-block;
 }
 
