@@ -2,9 +2,11 @@ $(function(){
 
 	$("form").submit(function(evt){
 		evt.preventDefault();
-		console.log("test");
+		
+		//var with input field value
+		var tag = $("input").val();
+
 	})
 
-	var tag = $("form").value;
 
 }); //end ready
