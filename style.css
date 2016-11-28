@@ -30,23 +30,25 @@ form{
 /* image list styling */
 
 ul{
-	border: 2px dashed green;
-	margin: 0;
+/*	border: 2px dashed green;
+*/	margin: 0;
 	padding: 10px;
 }
 
 li{
-	border: 2px solid gold;
-	list-style-type: none;
-	width: 30%;
+/*	border: 2px solid gold;
+*/	list-style-type: none;
+	width: 31%;
+	margin: 5px;
 	float: left;
-	height: 200px;
 
 }
 
 .photocontainer{
-	background-color: tomato;
+	background-color: #666;
+	height: 250px;
 	margin: 5px;
+	border-radius: 5px;
 }
 
 
