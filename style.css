@@ -30,21 +30,38 @@ form{
 /* image list styling */
 
 ul{
-	list-style-type: none;
+	border: 2px dashed green;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 }
-
 
 li{
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	width: 32%;
+	border: 2px solid gold;
+	list-style-type: none;
+	width: 30%;
+	float: left;
+	height: 200px;
+
 }
+
+.photocontainer{
+	background-color: tomato;
+	margin: 5px;
+}
+
+
 
 img{
 	max-width: 300px;
-	width: 100%;
+	width: 50px;
 	background-size: contain;
+	margin: 0 auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
 }
