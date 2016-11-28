@@ -41,7 +41,6 @@ li{
 	width: 31%;
 	margin: 5px;
 	float: left;
-
 }
 
 .photocontainer{
@@ -51,15 +50,10 @@ li{
 	border-radius: 5px;
 }
 
-
-
 img{
 	max-width: 300px;
-	width: 50px;
-	background-size: contain;
-	margin: 0 auto;
+	width: 100%;
 	vertical-align: middle;
-	display: inline-block;
 }
 
 .clearfix::after{

@@ -16,11 +16,11 @@ $(function(){
 		function display(data){
 			var photoHTML = "";
 			$.each(data.items, function(i, photo){
-				photoHTML += "<li><img src="; 
+				photoHTML += "<li><div class='photocontainer'><img src="; 
 				photoHTML += data.items[i].media.m; 
-				photoHTML += "</p></li>";
+				photoHTML += "</p></div></li>";
 			}) // end foreach function
-
+			photoHTML += "<div class='clearfix'></div>";
 			$("#photos").html(photoHTML);
 
 		}; //end of display function
