@@ -1,3 +1,4 @@
+/*General styles *************************/
 *{
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
@@ -6,6 +7,8 @@
 html{
 	background-color: #ddd;
 }
+
+/*Elements styles *************************/
 
 .container{
 	background-color: #eee;
@@ -26,6 +29,24 @@ form{
 	margin: 30px;
 	padding: 15px;
 	text-align: center;
+}
+
+label{
+	margin: 1px;
+	display: block;
+}
+
+/*input{
+	margin-top: 5px;
+}
+*/
+button{
+	color: #fff;
+	font-size: 1em;
+	background-color: green;
+	border-radius: 5px;
+	border: none;
+	margin-top: 25px;
 }
 
 /* image list styling *********************/
@@ -63,6 +84,8 @@ img{
 	content: "";
 	display: table;
 }
+
+/*responsive styles ***********************/
 
 @media screen and (min-width: 472px){
 	.photocontainer{
