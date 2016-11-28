@@ -4,12 +4,13 @@ $(function(){
 		evt.preventDefault();
 		
 		//var with input field value
-		var tag = $("input").val();
+		var tagSearch = $("input").val();
 
 		//ajax part
 		var feed = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 		var options = {
-			format : "json"
+			format : "json",
+			tags :  tagSearch
 		}
 
 		function display(data){
@@ -23,7 +24,7 @@ $(function(){
 			}) // end foreach function
 
 			$("#photos").html(photoHTML);
-			
+
 		}; //end of display function
 
 		$.getJSON(feed, options, display);
