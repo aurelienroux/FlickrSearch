@@ -20,9 +20,10 @@ $(function(){
 		function display(data){
 			var photoHTML = "";
 			$.each(data.items, function(i, photo){
-				photoHTML += "<li><div class='photocontainer'><img src="; 
+				photoHTML += "<li>"; 
+				photoHTML += "<div class='photocontainer'><img src="; 
 				photoHTML += data.items[i].media.m; 
-				photoHTML += "</p></div></li>";
+				photoHTML += "</div></li>";
 			}) // end foreach function
 			photoHTML += "<div class='clearfix'></div>";
 			$("#photos").html(photoHTML);
@@ -35,9 +36,6 @@ $(function(){
 
 		$.getJSON(feed, options, display);
 
-
-
 	}); //end of form function
-
 
 }); //end ready
