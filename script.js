@@ -13,15 +13,21 @@ $(function(){
 		}
 
 		function display(data){
-			console.log(data.items[0].link + " " + data.items[0].title);
+			var photoHTML = "";
+			$.each(data.items, function(i, photo){
+				photoHTML += "<li><img src="; 
+				photoHTML += data.items[i].media.m; 
+				// photoHTML += "><p class='title'>";
+				// photoHTML += data.items[i].title ;
+				photoHTML += "</p></li>";
+			}) // end foreach function
 
-			var photoHTML = "<li><img src=" + data.items[0].media.m + "><p class='title'>" + data.items[0].title + "</p></li>"
 			$("#photos").html(photoHTML);
-		};
+			
+		}; //end of display function
 
 		$.getJSON(feed, options, display);
 
-	})
-
+	}); //end of form function
 
 }); //end ready
