@@ -18,8 +18,6 @@ $(function(){
 			$.each(data.items, function(i, photo){
 				photoHTML += "<li><img src="; 
 				photoHTML += data.items[i].media.m; 
-				// photoHTML += "><p class='title'>";
-				// photoHTML += data.items[i].title ;
 				photoHTML += "</p></li>";
 			}) // end foreach function
 

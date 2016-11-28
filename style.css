@@ -46,4 +46,5 @@ li{
 img{
 	max-width: 300px;
 	width: 100%;
+	background-size: contain;
 }
