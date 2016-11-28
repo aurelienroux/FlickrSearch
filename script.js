@@ -3,6 +3,10 @@ $(function(){
 	$("form").submit(function(evt){
 		evt.preventDefault();
 		
+		//deactivate search field and button
+		$("input").prop("disabled", true);
+		$("button").prop("disabled", true).text("Seaching...");
+
 		//var with input field value
 		var tagSearch = $("input").val();
 
@@ -23,10 +27,17 @@ $(function(){
 			photoHTML += "<div class='clearfix'></div>";
 			$("#photos").html(photoHTML);
 
+			//reactivate search field and button after search
+			$("input").prop("disabled", false);
+			$("button").prop("disabled", false).text("Search again");
+
 		}; //end of display function
 
 		$.getJSON(feed, options, display);
 
+
+
 	}); //end of form function
+
 
 }); //end ready
