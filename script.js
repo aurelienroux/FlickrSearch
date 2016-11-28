@@ -13,7 +13,10 @@ $(function(){
 		}
 
 		function display(data){
-			console.log(data.items[0].link);
+			console.log(data.items[0].link + " " + data.items[0].title);
+
+			var photoHTML = "<li><img src=" + data.items[0].media.m + "><p class='title'>" + data.items[0].title + "</p></li>"
+			$("#photos").html(photoHTML);
 		};
 
 		$.getJSON(feed, options, display);
