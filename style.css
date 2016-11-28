@@ -19,6 +19,7 @@ html{
 h1{
 	margin: 30px 0;
 	text-align: center;
+	font-weight: 900;
 }
 
 form{
@@ -27,7 +28,7 @@ form{
 	text-align: center;
 }
 
-/* image list styling */
+/* image list styling *********************/
 
 ul{
 	margin: 0;
@@ -35,32 +36,32 @@ ul{
 }
 
 li{
-	list-style-type: none;
-	width: 49%;
-	margin: 0.5px;
 	float: left;
+	list-style-type: none;
+	margin: 0.5px;
+	width: 49%;
 }
 
 .photocontainer{
 	background-color: #ddd;
+	border-radius: 5px;
 	height: 150px;
 	margin: 5px;
-	border-radius: 5px;
-	padding: 10px;
 	overflow: hidden;
+	padding: 10px;
 }
 
 img{
+	background-size: cover;
+	margin: 0 auto;
 	max-width: 300px;
 	width: 100%;
-	margin: 0 auto;
-	background-size: cover;
 }
 
 .clearfix::after{
+	clear: both;
 	content: "";
 	display: table;
-	clear: both;
 }
 
 @media screen and (min-width: 472px){
