@@ -4,16 +4,16 @@
 }
 
 html{
-	background-color: #999;
+	background-color: #bbb;
 }
 
 .container{
-	background-color: #ddd;
+	background-color: #eee;
 	border-radius: 10px;
 	margin: 50px auto;
 	max-width: 900px;
-	padding: 35px;
-	width: 90%;
+	padding: 10px;
+	width: 98%;
 }
 
 h1{
@@ -30,30 +30,31 @@ form{
 /* image list styling */
 
 ul{
-/*	border: 2px dashed green;
-*/	margin: 0;
-	padding: 10px;
+	margin: 0;
+	padding: 1px;
 }
 
 li{
-/*	border: 2px solid gold;
-*/	list-style-type: none;
-	width: 31%;
-	margin: 5px;
+	list-style-type: none;
+	width: 49%;
+	margin: 0.5px;
 	float: left;
 }
 
 .photocontainer{
-	background-color: #666;
-	height: 250px;
+	background-color: #bbb;
+	height: 150px;
 	margin: 5px;
 	border-radius: 5px;
+	padding: 10px;
+	overflow: hidden;
 }
 
 img{
 	max-width: 300px;
 	width: 100%;
-	vertical-align: middle;
+	margin: 0 auto;
+	background-size: cover;
 }
 
 .clearfix::after{
@@ -61,3 +62,43 @@ img{
 	display: table;
 	clear: both;
 }
+
+@media screen and (min-width: 472px){
+	.photocontainer{
+		height: 250px;
+	}
+}
+
+@media screen and (min-width: 680px){
+	li{
+		width: 33%;
+	}
+}
+
+@media screen and (min-width: 800px){
+	li{
+		width: 24%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
